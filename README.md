@@ -27,3 +27,7 @@ This project documents the deployment of a small enterprise campus network built
 The lab demonstrates the implementation of core enterprise networking technologies including VLAN segmentation, secure device management, inter-VLAN routing using Router-on-a-Stick, DHCP services, NAT, Voice over IP (VoIP), wireless connectivity, and network verification.
 
 This repository represents the first project in my networking portfolio and establishes the foundational skills required before progressing to enterprise routing protocols such as OSPF, EIGRP, and BGP.
+
+## Enterprise Network Topology
+
+![Enterprise Campus Network](Topology/FSNA-Enterprise-Network-Lab-Elroy-Noel.png)
