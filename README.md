@@ -28,6 +28,4 @@ The lab demonstrates the implementation of core enterprise networking technologi
 
 This repository represents the first project in my networking portfolio and establishes the foundational skills required before progressing to enterprise routing protocols such as OSPF, EIGRP, and BGP.
 
-## Enterprise Network Topology
 
-![Enterprise Campus Network](Topology/FSNA-Enterprise-Network-Lab-Elroy-Noel.png)
