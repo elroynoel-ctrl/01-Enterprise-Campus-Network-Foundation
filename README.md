@@ -19,3 +19,11 @@
 | **Platform** | Cisco Packet Tracer |
 | **Status** | ✅ Complete |
 | **Difficulty** | Foundation |
+
+## Project Overview
+
+This project documents the deployment of a small enterprise campus network built in Cisco Packet Tracer as part of the Full Stack Network Associate (FSNA) program.
+
+The lab demonstrates the implementation of core enterprise networking technologies including VLAN segmentation, secure device management, inter-VLAN routing using Router-on-a-Stick, DHCP services, NAT, Voice over IP (VoIP), wireless connectivity, and network verification.
+
+This repository represents the first project in my networking portfolio and establishes the foundational skills required before progressing to enterprise routing protocols such as OSPF, EIGRP, and BGP.
