@@ -1,6 +1,7 @@
-# Enterprise Network Foundation Lab (FSNA)
+# Enterprise Campus Network Foundation
 
-## Overview
+## Full Stack Network Associate (FSNA) Program
+
 
 This project documents the foundational enterprise network lab completed as part of my hands-on Cisco networking portfolio.
 
