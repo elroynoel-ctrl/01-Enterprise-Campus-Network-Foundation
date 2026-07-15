@@ -47,7 +47,7 @@ The lab consists of:
 | VLAN | Name | Network | Purpose |
 |------|------|---------|---------|
 |100|Management|192.168.100.0/24|Network Device Management|
-|120|Data|192.168.200.0/24|User Devices|
+|200|Data|192.168.200.0/24|User Devices|
 |150|Voice|192.168.150.0/24|IP Telephony|
 
 ---
