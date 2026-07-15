@@ -7,6 +7,20 @@ After completing the configuration, the network was verified to ensure all devic
 
 ---
 
+## Verification Workflow
+
+The completed network was verified using a structured validation process to confirm that all configured devices, interfaces, VLANs, and network services were operating as intended.
+
+Verification included:
+
+1. Verify router interfaces and routing.
+2. Verify switch interfaces and VLAN configuration.
+3. Verify trunk link operation.
+4. Verify end-to-end connectivity.
+5. Verify wireless connectivity.
+6. Verify voice network connectivity.
+7. Verify Internet access through the simulated ISP.
+
 ## Router Verification
 
 ### Verify Interface Status
@@ -133,6 +147,20 @@ Verified connectivity through the simulated ISP router.
 Verified IP Phones received network connectivity through the Voice VLAN.
 
 ---
+## Verification Checklist
+
+| Verification Item | Status |
+|-------------------|--------|
+| Router Interfaces Operational | ✅ |
+| Switch Interfaces Operational | ✅ |
+| VLAN 100 – Management | ✅ |
+| VLAN 150 – Voice | ✅ |
+| VLAN 200 – Data | ✅ |
+| Trunk Links Operational | ✅ |
+| End-to-End Connectivity | ✅ |
+| Wireless Connectivity | ✅ |
+| Internet Connectivity | ✅ |
+| Voice Network Connectivity | ✅ |
 
 ## Result
 
@@ -150,3 +178,7 @@ Wireless Connectivity	                    ✅
 Internet Connectivity	                    ✅
 
 The Enterprise Campus Network Foundation lab met all design objectives and provided stable connectivity for data, voice, wireless, and management services.
+
+---
+
+This verification guide provides a repeatable validation process that can be used during future enterprise networking projects to confirm successful implementation before production deployment.
