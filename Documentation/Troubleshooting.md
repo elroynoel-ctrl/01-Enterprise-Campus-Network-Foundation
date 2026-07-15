@@ -124,53 +124,55 @@ Performed connectivity testing using:
 ```bash
 ping
 ```
-Issue 6 — Duplicate IP Address
+## Issue 6 — Duplicate IP Address
 
 ### Symptom
 
--A workstation experienced intermittent connectivity.
--The device could not consistently communicate with its default gateway.
--Another host on the network unexpectedly lost connectivity.
+- A workstation experienced intermittent connectivity.
+- The device could not consistently communicate with its default gateway.
+- Another host on the network unexpectedly lost connectivity.
 
 ### Cause
--Two devices were configured with the same IPv4 address, causing an IP address conflict on the network.
+- Two devices were configured with the same IPv4 address, causing an IP address conflict on the network.
 
 ### Resolution
--Verified the IP addressing of affected devices.
--Assigned a unique IPv4 address to the conflicting device.
--Confirmed the correct subnet mask and default gateway configuration.
+- Verified the IP addressing of affected devices.
+- Assigned a unique IPv4 address to the conflicting device.
+- Confirmed the correct subnet mask and default gateway configuration.
 
 ### Verification
--show arp
--ping <default-gateway>
--Expected Result
--Each device has a unique IP address.
--Connectivity to the default gateway is restored.
--Network communication is stable.
+```bash
+show arp
+ping <default-gateway>
+```
+### Expected Result
+- Each device has a unique IP address.
+- Connectivity to the default gateway is restored.
+- Network communication is stable.
 
-Issue 7 — Native VLAN Mismatch
+## Issue 7 — Native VLAN Mismatch
 
 ### Symptom
--Devices connected through trunk links could not communicate correctly.
--Some VLAN traffic failed to pass between switches.
--Cisco Discovery Protocol (CDP) displayed a native VLAN mismatch warning.
+- Devices connected through trunk links could not communicate correctly.
+- Some VLAN traffic failed to pass between switches.
+- Cisco Discovery Protocol (CDP) displayed a native VLAN mismatch warning.
 
 ### Cause
--The native VLAN configured on one end of the trunk link did not match the native VLAN configured on the opposite switch.
+- The native VLAN configured on one end of the trunk link did not match the native VLAN configured on the opposite switch.
 
 ### Resolution
--Verified the trunk configuration on both switches.
--Configured the same native VLAN on each side of the trunk.
--Confirmed that the required VLANs were allowed across the trunk link.
+- Verified the trunk configuration on both switches.
+- Configured the same native VLAN on each side of the trunk.
+- Confirmed that the required VLANs were allowed across the trunk link.
 
 ### Verification
--show interfaces trunk
--show running-config interface GigabitEthernet0/1
+- show interfaces trunk
+- show running-config interface GigabitEthernet0/1
 
 ### Expected Result
--Trunk ports are operational.
--Native VLANs match on both switches.
--VLAN traffic passes successfully across the trunk link.
+- Trunk ports are operational.
+- Native VLANs match on both switches.
+- VLAN traffic passes successfully across the trunk link.
 
 ---
 
@@ -192,6 +194,8 @@ The following approach was used throughout the project:
 ## Outcome
 
 All identified issues were resolved through systematic troubleshooting using Cisco IOS verification commands.
+
+This structured troubleshooting methodology provides a repeatable process for diagnosing and resolving common enterprise campus networking issues.
 
 The final network successfully supported:
 
