@@ -7,7 +7,7 @@ service password-encryption
 !
 hostname FSNA-SW1
 !
-enable secret 5 $1$mERr$bUOOPN/wrAb4b6k.M1QXr0
+enable secret < Redacted >
 !
 !
 !
@@ -16,7 +16,7 @@ mls qos
 ip ssh version 2
 ip domain-name fsna.local
 !
-username fsna secret 5 $1$mERr$EvbuiG2ABZ4rw5Jhg.EbB0
+username fsna secret < Redacted >
 !
 !
 !
