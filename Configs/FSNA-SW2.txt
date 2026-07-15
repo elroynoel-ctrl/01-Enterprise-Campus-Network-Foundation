@@ -7,7 +7,7 @@ service password-encryption
 !
 hostname FSNA-SW2
 !
-enable secret 5 < Redacted >
+enable secret < Redacted >
 !
 !
 !
