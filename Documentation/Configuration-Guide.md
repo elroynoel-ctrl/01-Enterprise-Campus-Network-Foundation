@@ -121,7 +121,7 @@ show interfaces trunk
 | VLAN | Name | Purpose |
 |------|------|---------|
 |100|Management|Network device management|
-|120|Data|User devices|
+|200|Data|User devices|
 |150|Voice|Cisco IP Phones|
 
 ---
