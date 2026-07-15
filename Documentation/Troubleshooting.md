@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines common issues that may occur during deployment of the Enterprise Campus Network Foundation lab and the methods used to identify and resolve them.
+This document outlines common issues that may occur during the deployment of the Enterprise Campus Network Foundation lab. While not every issue was encountered during implementation, each scenario represents a common enterprise networking problem along with the recommended verification and resolution steps.
 
 ---
 
@@ -124,6 +124,53 @@ Performed connectivity testing using:
 ```bash
 ping
 ```
+Issue 6 — Duplicate IP Address
+
+### Symptom
+
+-A workstation experienced intermittent connectivity.
+-The device could not consistently communicate with its default gateway.
+-Another host on the network unexpectedly lost connectivity.
+
+### Cause
+-Two devices were configured with the same IPv4 address, causing an IP address conflict on the network.
+
+### Resolution
+-Verified the IP addressing of affected devices.
+-Assigned a unique IPv4 address to the conflicting device.
+-Confirmed the correct subnet mask and default gateway configuration.
+
+### Verification
+-show arp
+-ping <default-gateway>
+-Expected Result
+-Each device has a unique IP address.
+-Connectivity to the default gateway is restored.
+-Network communication is stable.
+
+Issue 7 — Native VLAN Mismatch
+
+### Symptom
+-Devices connected through trunk links could not communicate correctly.
+-Some VLAN traffic failed to pass between switches.
+-Cisco Discovery Protocol (CDP) displayed a native VLAN mismatch warning.
+
+### Cause
+-The native VLAN configured on one end of the trunk link did not match the native VLAN configured on the opposite switch.
+
+### Resolution
+-Verified the trunk configuration on both switches.
+-Configured the same native VLAN on each side of the trunk.
+-Confirmed that the required VLANs were allowed across the trunk link.
+
+### Verification
+-show interfaces trunk
+-show running-config interface GigabitEthernet0/1
+
+### Expected Result
+-Trunk ports are operational.
+-Native VLANs match on both switches.
+-VLAN traffic passes successfully across the trunk link.
 
 ---
 
