@@ -17,6 +17,19 @@ This document outlines the configuration performed during the Enterprise Campus 
 | Cisco 7960 IP Phones | Voice network simulation |
 
 ---
+## Configuration Workflow
+
+The Enterprise Campus Network Foundation lab was implemented using the following workflow:
+
+1. Configure the router with hostname, interface addressing, and routing.
+2. Configure both switches with management settings and VLANs.
+3. Configure access ports and trunk links.
+4. Connect end devices, IP phones, and the wireless access point.
+5. Verify Layer 2 and Layer 3 connectivity.
+6. Perform end-to-end testing using Cisco IOS verification commands.
+7. Save all device configurations.
+
+---
 
 ## Router Configuration
 
