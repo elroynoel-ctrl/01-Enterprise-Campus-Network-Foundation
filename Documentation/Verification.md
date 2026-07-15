@@ -63,7 +63,7 @@ show vlan brief
 **Expected Result**
 
 - VLAN 100 – Management
-- VLAN 120 – Data
+- VLAN 200 – Data
 - VLAN 150 – Voice
 - Correct access ports assigned
 
