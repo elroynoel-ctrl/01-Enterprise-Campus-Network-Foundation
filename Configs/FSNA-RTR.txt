@@ -10,7 +10,7 @@ hostname FSNA-RTR
 no logging console
 !
 !
-enable secret 5 $1$mERr$bUOOPN/wrAb4b6k.M1QXr0
+enable secret < Redacted >
 !
 !
 ip dhcp excluded-address 192.168.150.1 192.168.150.50
@@ -33,7 +33,7 @@ no ipv6 cef
 !
 !
 !
-username fsna password 7 083B584B
+username fsna password < Redacted >
 !
 !
 license udi pid CISCO2901/K9 sn FTX1524P9G4-
