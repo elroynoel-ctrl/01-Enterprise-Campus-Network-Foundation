@@ -16,7 +16,6 @@ The Enterprise Campus Network Foundation lab establishes the core infrastructure
 
 ## Objectives
 
-- Document the implementation using professional engineering documentation
 - Build a functional enterprise campus network
 - Configure Layer 2 switching
 - Configure Layer 3 routing
@@ -24,6 +23,7 @@ The Enterprise Campus Network Foundation lab establishes the core infrastructure
 - Support voice and wireless devices
 - Provide Internet connectivity through an ISP
 - Verify end-to-end network communication
+- Document the implementation using professional engineering documentation
 
 ---
 
