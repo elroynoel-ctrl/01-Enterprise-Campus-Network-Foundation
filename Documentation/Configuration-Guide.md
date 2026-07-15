@@ -40,8 +40,8 @@ The Cisco 2901 router was configured to provide Layer 3 connectivity between the
 The following baseline configuration was completed:
 
 - Configure hostname
-- Configure enable secret
-- Configure console access
+- Configure secure administrative access (enable secret)
+- Configure console and remote admisistrative access
 - Configure VTY access
 - Enable password encryption
 - Configure Message of the Day (MOTD) banner
@@ -59,7 +59,6 @@ Tasks completed:
 ```bash
 no shutdown
 ```
----
 
 - Verify interface status
 
@@ -125,6 +124,8 @@ show interfaces trunk
 |120|Data|User devices|
 |150|Voice|Cisco IP Phones|
 
+---
+
 ## Verification Commands
 
 The following Cisco IOS commands were used throughout the implementation to verify that the network was configured correctly and operating as expected.
@@ -146,3 +147,41 @@ These commands verified:
 - Device configuration
 - MAC address learning
 - End-to-end network connectivity
+
+---
+
+## End Devices
+
+The enterprise network successfully supported connectivity for the following endpoint devices after configuration and verification:
+
+- Desktop PCs
+- Tablet
+- Wireless Access Point
+- Cisco 7960 IP Phones
+
+---
+
+## Configuration Summary
+
+Upon completion of the implementation, the Enterprise Campus Network Foundation lab successfully provided:
+
+- Layer 2 switching
+- Layer 3 routing
+- VLAN segmentation
+- Voice VLAN support
+- Wireless connectivity
+- Secure management access
+- Internet connectivity
+- End-to-end network communication
+
+All configurations were verified using Cisco IOS verification commands prior to documenting the project.
+
+---
+
+## Configuration Files
+
+Complete device configurations are available in the **Configs** directory.
+
+- FSNA-RTR.txt
+- FSNA-SW1.txt
+- FSNA-SW2.txt
