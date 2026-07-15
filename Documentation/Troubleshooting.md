@@ -6,7 +6,7 @@ This document outlines common issues that may occur during the deployment of the
 
 ---
 
-## Issue 1 — Interface Down
+## Issue 1 — The interface was administratively disabled.
 
 ### Symptom
 
@@ -45,7 +45,7 @@ Hosts could not communicate within their assigned VLAN.
 
 ### Cause
 
-Incorrect VLAN assignment.
+One or more switch ports were assigned to the incorrect VLAN.
 
 ### Resolution
 
@@ -59,7 +59,7 @@ Assigned interfaces to the correct VLAN.
 
 ---
 
-## Issue 3 — Trunk Link Not Passing Traffic
+## Issue 3 — The trunk configuration differed btween the connected switches.
 
 ### Symptom
 
@@ -89,7 +89,7 @@ Unable to access the management interface.
 
 ### Cause
 
-Incorrect management IP address or default gateway.
+The management IP address or default gateway was configured incorreclty.
 
 ### Resolution
 
@@ -109,7 +109,7 @@ A workstation could not reach its gateway.
 
 ### Cause
 
-Incorrect IP configuration.
+The end device was configured with incorrect IP addressing information.
 
 ### Resolution
 
@@ -124,6 +124,8 @@ Performed connectivity testing using:
 ```bash
 ping
 ```
+---
+
 ## Issue 6 — Duplicate IP Address
 
 ### Symptom
@@ -165,9 +167,12 @@ ping <default-gateway>
 - Configured the same native VLAN on each side of the trunk.
 - Confirmed that the required VLANs were allowed across the trunk link.
 
-### Verification
-- show interfaces trunk
-- show running-config interface GigabitEthernet0/1
+### Verification 
+
+```bash
+show interfaces trunk
+show running-config interface GigabitEthernet0/1
+```
 
 ### Expected Result
 - Trunk ports are operational.
@@ -204,3 +209,6 @@ The final network successfully supported:
 - Wireless access
 - Management network access
 - Internet connectivity
+- End-to-end network communication
+
+The troubleshooting scenarios documented in this guide provide a practical reference for identifying and resolving common issues encountered in Cisco enterprise campus networks.
