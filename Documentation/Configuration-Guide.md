@@ -20,56 +20,115 @@ This document outlines the configuration performed during the Enterprise Campus 
 
 ## Router Configuration
 
-The Cisco 2901 router was configured with:
+The Cisco 2901 router was configured to provide Layer 3 connectivity between the enterprise network and the simulated ISP while following Cisco IOS configuration best practices.
 
-- Hostname
-- Interface IP addressing
-- Default routing
-- Management access
-- Secure passwords
-- Configuration saved to startup-config
+### Initial Configuration
+
+The following baseline configuration was completed:
+
+- Configure hostname
+- Configure enable secret
+- Configure console access
+- Configure VTY access
+- Enable password encryption
+- Configure Message of the Day (MOTD) banner
+
+### Interface Configuration
+
+The router interfaces were configured to establish connectivity with the campus network and upstream ISP.
+
+Tasks completed:
+
+- Assign IPv4 addresses
+- Configure subnet masks
+- Enable interfaces using:
+
+```bash
+no shutdown
+```
+
+- Verify interface status
+
+### Routing Configuration
+
+Routing was configured to provide connectivity between local networks and the simulated Internet.
+
+Tasks completed:
+
+- Configure default route
+- Verify routing table
+- Save configuration to startup-config
 
 ---
 
 ## Switch Configuration
 
-Both Catalyst 2960 switches were configured with:
+Both Cisco Catalyst 2960 switches provide Layer 2 connectivity throughout the enterprise campus.
 
-- Hostname
-- Management VLAN
-- Access ports
-- Trunk links
-- Default gateway
-- Console and VTY access
-- Password encryption
+### Initial Configuration
 
+Each switch received the following baseline configuration:
+
+- Configure hostname
+- Configure management VLAN
+- Configure management IP address
+- Configure default gateway
+
+### Layer 2 Configuration
+
+The switching infrastructure was configured to support network segmentation and inter-switch communication.
+
+Tasks completed:
+
+- Create VLANs
+- Configure access ports
+- Configure trunk links
+- Assign interfaces to the appropriate VLANs
+
+### Management Configuration
+
+Remote and local management access was configured by:
+
+- Configuring console access
+- Configuring VTY access
+- Enabling password encryption
+- Saving the running configuration
+
+Configuration was verified using:
+
+```bash
+show running-config
+show vlan brief
+show interfaces trunk
+```
 ---
 
 ## VLAN Configuration
 
 | VLAN | Name | Purpose |
 |------|------|---------|
-| 100 | Management | Network device management |
-| 120 | Data | User devices |
-| 150 | Voice | Cisco IP Phones |
+|100|Management|Network device management|
+|120|Data|User devices|
+|150|Voice|Cisco IP Phones|
 
----
+## Verification Commands
 
-## End Devices
+The following Cisco IOS commands were used throughout the implementation to verify that the network was configured correctly and operating as expected.
 
-The following devices were successfully connected and tested:
+```bash
+show ip interface brief
+show vlan brief
+show interfaces trunk
+show running-config
+show mac address-table
+ping
+```
 
-- Desktop PCs
-- Tablet
-- Wireless Access Point
-- Cisco IP Phones
+These commands verified:
 
----
-
-## Configuration Files
-
-Complete device configurations are available in the **Configs** folder.
-
-- FSNA-RTR.txt
-- FSNA-SW1.txt
-- FSNA-SW2.txt
+- Interface operational status
+- VLAN creation and port assignments
+- Trunk link operation
+- Device configuration
+- MAC address learning
+- End-to-end network connectivity
