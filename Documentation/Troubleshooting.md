@@ -6,7 +6,7 @@ This document outlines common issues that may occur during the deployment of the
 
 ---
 
-## Issue 1 — The interface was administratively disabled.
+## Issue 1 — Interface Down.
 
 ### Symptom
 
@@ -18,7 +18,7 @@ administratively down
 
 ### Cause
 
-Interface was disabled.
+The interface was administratively disabled.
 
 ### Resolution
 
@@ -59,7 +59,7 @@ Assigned interfaces to the correct VLAN.
 
 ---
 
-## Issue 3 — The trunk configuration differed btween the connected switches.
+## Issue 3 — Trunk Link not Passing Traffic.
 
 ### Symptom
 
@@ -67,7 +67,7 @@ Devices connected to different switches could not communicate.
 
 ### Cause
 
-Trunk configuration mismatch.
+The trunk configuration differed between the connected switches.
 
 ### Resolution
 
@@ -151,6 +151,8 @@ ping <default-gateway>
 - Each device has a unique IP address.
 - Connectivity to the default gateway is restored.
 - Network communication is stable.
+
+---
 
 ## Issue 7 — Native VLAN Mismatch
 
