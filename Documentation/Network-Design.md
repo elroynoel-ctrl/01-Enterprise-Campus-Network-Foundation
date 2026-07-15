@@ -6,6 +6,8 @@ A growing organization requires a secure and scalable enterprise campus network 
 
 The design provides a solid networking foundation that can be expanded in future projects with dynamic routing protocols such as OSPF, EIGRP, and BGP.
 
+---
+
 ## Project Overview
 
 The Enterprise Campus Network Foundation lab establishes the core infrastructure of a small enterprise network using Cisco routing and switching technologies. The objective is to create a stable, scalable campus network that supports data, voice, wireless, and Internet connectivity while following enterprise networking best practices.
@@ -14,6 +16,7 @@ The Enterprise Campus Network Foundation lab establishes the core infrastructure
 
 ## Objectives
 
+- Document the implementation using professional engineering documentation
 - Build a functional enterprise campus network
 - Configure Layer 2 switching
 - Configure Layer 3 routing
@@ -59,6 +62,8 @@ The lab consists of:
 - Internet access through an upstream ISP
 - PSTN connectivity for IP telephony demonstration
 
+---
+
 ## Design Principles
 
 The network was designed using several enterprise networking principles:
@@ -70,6 +75,7 @@ The network was designed using several enterprise networking principles:
 - Centralized Layer 3 routing
 - Structured documentation
 - Simplified troubleshooting and verification
+
 ---
 
 ## Topology Diagram
